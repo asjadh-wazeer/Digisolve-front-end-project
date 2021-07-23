@@ -59,19 +59,22 @@ h2{
 .btn-full:hover{
     background-color: #ed07b7;
 }
+
+
 .btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost:visited{
     border: 2px solid #ed07b7;
     color: #ed07b7;
 }
 .btn-ghost:active,
-.btn-ghost:hover {
+.btn-ghost:hover{
     background-color: #ed07b7;
     color: #fff;
 }
 
-
-
+.header-box-text{
+   margin-bottom:100px; 
+}
 .main-nav{
     list-style: none;
     float: right;
@@ -104,7 +107,6 @@ h2{
 .laptop-image{
     width: 40%;
 }
-
 .about-heading {
     color: black;
     font-size: 250%;
@@ -118,10 +120,12 @@ h2{
 .about-box {
     margin-top:120px;
 }
+
 .about-box:first-child {
-    text-align:left;
-    padding:0 5%;
+    text-align: left;
+    padding: 0 5%;
 }
 .about-box:last-child {
-    text-align:right;  
+    text-align: right;  
 }
+
