@@ -3,45 +3,371 @@
 <head>
 	<meta charset="utf-8">
 	<title>new project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/976fd2b877.js" crossorigin="anonymous"></script>
+
+
+
+	<!--favicon--> 
+	<link rel="apple-touch-icon" sizes="180x180" href="vendors/favicon/apple-touch-icon.png"> <!--idula vendors ku moda / wara padadu -->
+	<link rel="icon" type="image/png" sizes="32x32" href="vendors/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="vendors/favicon/favicon-16x16.png">
+	<link rel="manifest" href="vendors/favicon/site.webmanifest"> 
+
+
+	<!--google fonts-->
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" text="text/css" href="vendors/css/fluid.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/fluid.css">
+
+	<!-- animate.style-->
+	<link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 	<link rel="stylesheet" text="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" text="text/css" href="resources/css/media-query.css">
 </head>
 <body>
-<header>
-	<nav>
-		<img src="resources/img/logo.jpg" alt="nature logo" class="logo">
-			<ul class="main-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
+<header id="home">
+	<nav> 
+		<img src="resources/img/digisolve-logo.png" alt="nature logo" class="logo">
+		<ul class="main-nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#contact">Contact Us</a></li> 
+		</ul>
+	</nav>
 	<div class="header-box">
-		<div class="header-box-text">
-			<h1>Digisolve agency</h1>
+		<div class="header-box-text">     <!-------------------->
+			<h1>Digital agency</h1>
 			<h2>I am ready to complete my project</h2>
 		</div>
-		<a href="#" class="btn btn-full">Get a quate today</a>
+		<a href="#" class="btn btn-full js--scroll-to-a-contact">Get a quate today</a>
 
 	</div>
 </header>
 
-<section class="about-section">
+<section class="about-section js--about-section" id="about">
 	<div class="row">
-		<div class="col spam_1_of_2 about-box">
-			<h1 class="about-heading">Hello HI</h1>
-			<p class="about-para">The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business, and government networks of local to global scope, linked by a broad array of electronic, wireless, and optical networking technologies.</p>
+		<div class="col span_1_of_2 about-box">
+			<h1 class="about-heading">Digisolve</h1>
+			<p class="about-para">We aim to be as flexible as possible when it comes to helping you solve challenges with the Microsoft cloud. The first step is listening to exactly what your needs are. </p>
 			<br><br>
-			<p class="about-para"> The Internet carries a vast range of information resources and services, such as the inter-linked hypertext documents and applications of the World Wide Web (WWW), electronic mail, telephony, and file sharing.</p>
+			<p class="about-para"> That’s why we offer a free no obligation initial remote consulting appointment so we can understand how to help. </p>
 			
 			<a href="a" class="btn btn-ghost">Read More</a>
 		</div>
-		<div class="col spam_1_of_2 about-box">
-			<img src="resources/img/logo.jpg" alt="on lap" class="laptop-image">
+
+		<div class="col span_1_of_2 about-box">
+			<img src="resources/img/about-img.jpg" alt="on lap" class="laptop-image">
 		</div>
 	</div>	
-</section>	
+</section>
 
+
+<section class="work-section">
+	<div class="row"> 
+		<h2 class="section-heading">Our Work</h2>
+		<h3 class="section-sub-heading">Hello Digisolve,how is it</h3>
+	</div>
+	<!--<div class="portfolio-div">-->
+	<ul class="work-portfolio clearfix"> <!--clearfix is an additional class-->
+		<li>
+			<figure class="portfolio-image">
+				<img src="resources/img/online-advertising.png" alt="Online Advertising Image">
+				<p class="work-para">Online Advertising</p>
+			</figure>  
+		</li>
+		<li>	
+			<figure class="portfolio-image">
+				<img src="resources/img/social-media-campaigns.png" alt="Social Media Campaigns">
+				<p class="work-para">Social Media Campaigns</p>
+			</figure>
+		</li>
+		<li>
+			<figure class="portfolio-image">
+				<img src="resources/img/ux-design.png" alt="UX Design">
+				<p class="work-para">Ux Design</p>
+			</figure>
+		</li>
+		<li>
+			<figure class="portfolio-image">
+				<img src="resources/img/branding-digital-marketing.png" alt="Branding Digital Marketing">
+				<p class="work-para">Branding Digital Marketing</p>
+			</figure>
+		</li>
+	</ul>
+	</div>	
+	
+</section>
+
+<section class="services-section">
+	<div class="row"> 
+		<h2 class="section-heading">Our Services</h2>
+		<h3 class="section-sub-heading">Hello Digisolve,how is it</h3>
+	</div>
+	<div class="row">
+		<div class="col span_1_of_4 services-box"> <!--aditional class-->
+			<i class="fas fa-tags big-icon"></i>
+			<h4 class="service-heading">Branding</h4>
+			<p class="service-para">The next generation of the web’s favorite icon library + toolkit is now available</p>
+			<a href="#" class="service-link">Read More....</a>
+		</div>
+		<div class="col span_1_of_4 services-box"> 
+			<i class="fas fa-pen-alt big-icon"></i> 
+			<h4 class="service-heading">Content</h4>
+			<p class="service-para">The next generation of the web’s favorite icon library + toolkit is now available</p>
+			<a href="#" class="service-link">Read More....</a>
+		</div>
+		<div class="col span_1_of_4 services-box"> <!--aditional class-->
+			<i class="fas fa-funnel-dollar big-icon"></i> 
+			<h4 class="service-heading">Marketing</h4>
+			<p class="service-para">The next generation of the web’s favorite icon library + toolkit is now available</p>
+			<a href="#" class="service-link">Read More....</a>
+		</div>
+		<div class="col span_1_of_4 services-box"> <!--aditional class-->
+			<i class="fas fa-code big-icon"></i> 
+			<h4 class="service-heading">Web Design</h4>
+			<p class="service-para">The next generation of the web’s favorite icon library + toolkit is now available</p>
+			<a href="#" class="service-link">Read More....</a>
+		</div>
+	</div>		
+</section>	
+<section class="partners-section">
+	<div class="row"> 
+		<h2 class="section-heading">Featured Clients</h2>
+		<h3 class="section-sub-heading">Hello Digisolve,how is it</h3>
+	</div>
+
+	<div class="row">
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-1.png" alt="brand logo">
+		</div>
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-2.png" alt="brand logo">
+		</div>
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-3.png" alt="brand logo">
+		</div>
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-4.png" alt="brand logo">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-5.png" alt="brand logo">
+		</div>
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-6.png" alt="brand logo">
+		</div>
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-7.png" alt="brand logo">
+		</div>
+		<div class="col span_1_of_4">
+			<img class="partner-logo" src="resources/img/brand-logo-8.png" alt="brand logo">
+		</div>
+	</div>
+</section>
+<section class="testimonials-section">
+	<div class = "row">
+		<h2 class="testimonial-heading">Our Testimonials</h2>
+	</div>
+	<div class="row">
+		<div class="col span_1_of_3 testimonial-box">
+			<blockquote>
+				We just sent a confirmation and we'll get you all set up!.your address and we'll get you all set up!
+			</blockquote>
+			<cite><img src="resources/img/client-1.jpg" alt="Aaron Cruz">Aaron Cruz</cite>
+		</div>
+		<div class="col span_1_of_3 testimonial-box">
+			<blockquote>
+				We just sent a confirmation and we'll get you all set up!.your address and we'll get you all set up!
+			</blockquote>
+			<cite><img src="resources/img/client-2.jpg" alt="Jeff Jhons">Aaron Cruz</cite>
+		</div>
+		<div class="col span_1_of_3 testimonial-box">
+			<blockquote>
+				We just sent a confirmation and we'll get you all set up!.your address and we'll get you all set up!
+			</blockquote>
+			<cite><img src="resources/img/client-3.jpg" alt="Elanies">Aaron Cruz</cite>
+		</div>
+	</div>
+</section>
+<section class="package-section">
+	<div class="row">
+		<h2 class="packages-heading">Check out our most popular packages</h2>
+	</div>
+	<div class="row">
+		<div class="col span_1_of_3">
+			<div class="package-box">
+				<div>
+						<h4 class="package-heading">Starter</h4>
+						<p class ="package-price">$699<span> 3 months </span></p>
+						<p class="package-para">about this package</p>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fas fa-check small-icon"></i>Asdf</li>
+						<li><i class="fas fa-check small-icon"></i>Zxcv</li>
+						<li><i class="fas fa-check small-icon"></i>Bnmk</li>
+						<li><i class="fas fa-check small-icon"></i>Erty</li>
+						<li><i class="fas fa-check small-icon"></i>Polkj</li>
+					</ul>
+				</div>
+				<div>
+					<a href="#" class="btn btn-full">Sign Up now</a>
+				</div>
+			</div>
+		</div>
+		<div class="col span_1_of_3">
+			<div class="package-box">
+				<div>
+						<h4 class="package-heading">Starter</h4>
+						<p class ="package-price">$699<span> 3 months </span></p>
+						<p class="package-para">about this package</p>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fas fa-check small-icon"></i>Asdf</li>
+						<li><i class="fas fa-check small-icon"></i>Zxcv</li>
+						<li><i class="fas fa-check small-icon"></i>Bnmk</li>
+						<li><i class="fas fa-check small-icon"></i>Erty</li>
+						<li><i class="fas fa-check small-icon"></i>Polkj</li>
+					</ul>
+				</div>
+				<div>
+					<a href="#" class="btn btn-full">Sign Up now</a>
+				</div>
+			</div>
+		</div>
+		<div class="col span_1_of_3">
+			<div class="package-box">
+				<div>
+						<h4 class="package-heading">Starter</h4>
+						<p class ="package-price">$699<span> 3 months </span></p>
+						<p class="package-para">about this package</p>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fas fa-check small-icon"></i>Asdf</li>
+						<li><i class="fas fa-check small-icon"></i>Zxcv</li>
+						<li><i class="fas fa-check small-icon"></i>Bnmk</li>
+						<li><i class="fas fa-check small-icon"></i>Erty</li>
+						<li><i class="fas fa-check small-icon"></i>Polkj</li>
+					</ul>
+				</div>
+				<div>
+					<a href="#" class="btn btn-full">Sign Up now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contact-section js--contact" id="contact">
+	<div class="row">
+		<h2 class="contact-heading">We are happy to hear from you</h2>
+	</div>
+	<div class="row">
+		<form method="post" action="#" class="contact-form">
+			<div class="row">
+				<div class="col span_1_of_3 contact-label">
+					<label for="name">Name</label>	
+				</div>
+				<div class="col span_2_of_3">
+					<input type="text" name="Name" id="name" placeholder="Your Name" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col span_1_of_3 contact-label">
+					<label for="email">Email</label> 	
+				</div>
+				<div class="col span_2_of_3">
+					<input type="email" name="email" id="email" placeholder="Your Email" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col span_1_of_3 contact-label">
+					<label for="newsletter">News Letter</label>	
+				</div>
+				<div class="col span_2_of_3">
+					<input type="Checkbox" name="newsletter" id="newsletter" checked>&nbsp; Yes,please <!--&nbsp; idu space vida use panra-->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col span_1_of_3 contact-label">
+					<label for="message">Drop us a line</label>	
+				</div>
+				<div class="col span_2_of_3">
+					<textarea name="message" id="message" placeholder="Your Message"></textarea> 
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col span_1_of_3 contact-label">
+					<label for="message">Drop us a line</label>	
+				</div>
+				<div class="col span_2_of_3">
+					<textarea name="message" id="message" placeholder="Your Message"></textarea> 
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col span_1_of_3 contact-label">
+					&nbsp;	
+				</div>
+				<div class="col span_2_of_3">
+					<input type="submit" value="send it"> 
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+</section>
+<footer>
+	<div class="row">
+		<div class="col span_1_of_2">
+			<ul class="footer-nav">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Help & Support</a></li>
+				<li><a href="#">iOS App</a></li>
+				<li><a href="#">Android App</a></li>
+			</ul>
+		</div>
+		<div class="col span_1_of_2">
+			<ul class="social-links">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<p>This webpage has been created for practical purposes by Asjadh Wazeer.<br>
+You can feel free to use it and customize it to make your own webpages</p>		
+	</div>
+
+</footer>
+<!-- https://developers.google.com/speed/libraries la library script link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- respond.js,html5shiv.js,selectivizr.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+
+<!-- waypoint-->
+<!-- "/4.0.1/noframework.waypoints.min.js" --->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+<!-- always remember,keep your on script at the end of all the other script.bcz you want to load that to load last-->
+<script src="resources/js/script.js"></script>
 </body>
+
 </html>
